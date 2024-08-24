@@ -1,38 +1,40 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Style for the entire app container */
+div {
+  background-color: black; /* Black background for the app */
+  color: white; /* White text color */
+  min-height: 100vh; /* Make sure the app takes at least the full viewport height */
+  padding: 20px; /* Add some padding */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Style for input fields */
+input[type="text"] {
+  padding: 10px; /* Add padding inside the input field */
+  margin-right: 10px; /* Add some space between input and button */
+  border: 1px solid #444; /* Gray border */
+  border-radius: 4px; /* Rounded corners */
+  color: black; /* Black text inside input */
+  background-color: #333; /* Dark background inside input */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Style for buttons */
+button {
+  padding: 10px 15px; /* Add padding inside the button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  color: white; /* White text color */
+  background-color: #555; /* Grayish background for button */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+  background-color: #777; /* Lighter gray background on hover */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for the item list */
+div > div {
+  margin-bottom: 10px; /* Add some space between items */
+  display: flex; /* Align items and button horizontally */
+  align-items: center; /* Center items vertically */
 }
